@@ -1,0 +1,106 @@
+@import url(https://db.onlinewebfonts.com/c/0a6ee448d1bd65c56f6cf256a7c6f20a?family=Bahnschrift);
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1920px;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+.container > .card {
+    position: relative;
+    width: 280px;
+    height: 400px;
+    margin: 30px;
+    border-radius: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.container > .card > .content {
+    margin-top: 2rem;
+    padding: 2rem;
+    text-align: center;
+    transition: 0.5s;
+    transform: translateY(100px);
+    opacity: 0;
+}
+
+.container > .card:hover > .content {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.container > .card > .content > h2 {
+    position: absolute;
+    top: -60px;
+    right: 30px;
+    font-size: 8em;
+    pointer-events: none;
+    color: rgba(255, 255, 255, 0.1);
+}
+
+.container > .card > .content > h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    color: white;
+    z-index: 1;
+}
+
+.container > .card > .content > p {
+    font-family: 'Bahnschrift', sans-serif;
+    margin-top: .75rem;
+    margin-bottom: .75rem;
+    font-size: 1em;
+    color: white;
+}
+
+.container > .card > .content > a {
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    display: inline-block;
+    margin-top: 1.5rem;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.glass-button {
+    display: inline-block;
+    width: 100%;
+    padding: 12px 0px;
+    text-decoration: none;
+    border-radius: 7.5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 11px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out,
+    color 0.3s ease-in-out,
+    border-bottom-color 0.3s ease-in-out,
+    border-top-color 0.3s ease-in-out,
+    border-left-color 0.3s ease-in-out,
+    border-right-color 0.3s ease-in-out;
+    text-transform: uppercase;
+    font-size: .85rem;
+    backdrop-filter: blur(30px);
+    z-index: 10;
+}
+
+.glass-button:hover {
+    background: linear-gradient(rgba(3, 100, 100, 0.25), rgba(255, 12, 255, 0.2));
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 5.5);
+}
